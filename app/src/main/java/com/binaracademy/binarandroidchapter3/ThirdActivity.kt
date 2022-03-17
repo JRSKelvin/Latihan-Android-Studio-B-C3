@@ -1,13 +1,15 @@
 package com.binaracademy.binarandroidchapter3
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
 import android.widget.Toast
+import com.binaracademy.binarandroidchapter3.databinding.ActivitySecondBinding
 import com.binaracademy.binarandroidchapter3.databinding.ActivityThirdBinding
 
 class ThirdActivity : AppCompatActivity() {
-//    private lateinit var binding: ActivityThirdBinding
+    private lateinit var binding: ActivityThirdBinding
 
 //    var editText : String = ""
 
@@ -15,7 +17,13 @@ class ThirdActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         supportActionBar?.hide()
-        setContentView(R.layout.activity_third)
+        binding = ActivityThirdBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.moveActivityButton.setOnClickListener {
+            val intent = Intent(this@ThirdActivity, FourthActivity::class.java)
+            startActivity(intent)
+        }
 
         println("Activity 3 onCreate")
         Toast.makeText(this, "Activity 3 onCreate", Toast.LENGTH_LONG).show()

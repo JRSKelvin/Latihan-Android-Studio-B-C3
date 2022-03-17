@@ -9,23 +9,51 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <fragment
-            android:name="com.binaracademy.binarandroidchapter3.fragment.MainFragment"
             android:id="@+id/first_fragment"
+            android:name="com.binaracademy.binarandroidchapter3.fragment.MainFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
+
         <fragment
-            android:name="com.binaracademy.binarandroidchapter3.fragment.SecondFragment"
             android:id="@+id/second_fragment"
+            android:name="com.binaracademy.binarandroidchapter3.fragment.SecondFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/third_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/moveActivity1"
+                android:layout_marginRight="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fifth Activity" />
+            <Button
+                android:id="@+id/moveActivity2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sixth Activity" />
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

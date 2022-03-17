@@ -7,16 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import com.binaracademy.binarandroidchapter3.R
 
-class MainFragment : Fragment() {
+class ThirdFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        println("Fragment Main onCreate")
+        println("Fragment Third onCreate")
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_main, container, false)
+        return inflater.inflate(R.layout.fragment_third, container, false)
     }
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_home"
+        android:enabled="true"
+        android:title="Home" />
+    <item
+        android:id="@+id/ic_account_balance_wallet"
+        android:icon="@drawable/ic_account_balance_wallet"
+        android:enabled="true"
+        android:title="Promo" />
+    <item
+        android:id="@+id/ic_list_alt"
+        android:icon="@drawable/ic_list_alt"
+        android:enabled="true"
+        android:title="Orders" />
+</menu>
