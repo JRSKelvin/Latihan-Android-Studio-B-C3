@@ -33,5 +33,10 @@ class FourthActivity : AppCompatActivity() {
             val intent = Intent(this@FourthActivity, SixthActivity::class.java)
             startActivity(intent)
         }
+
+        binding.moveActivity3.setOnClickListener {
+            val intent = Intent(this@FourthActivity, SeventhActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
