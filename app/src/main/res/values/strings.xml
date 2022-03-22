@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BinarAndroidChapter3</string>
+    <string name="app_name">Binar Android Chapter 3</string>
     <string name="hello_main_fragment">Hello Main fragment</string>
     <string name="hello_second_fragment">Hello Second fragment</string>
     <string name="hello_third_fragment">Hello Third fragment</string>

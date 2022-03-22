@@ -21,29 +21,43 @@ class SeventhActivity : AppCompatActivity() {
 
         binding.moveActivity.setOnClickListener {
             // Normal Explicit
-//            val moveIntent = Intent(this@SeventhActivity, EighthActivity::class.java)
-//            moveIntent.putExtra("NAMA", binding.namaInput.text.toString())
-//            moveIntent.putExtra("EMAIL", binding.emailInput.text.toString())
-//            moveIntent.putExtra("UNIV", binding.univInput.text.toString())
-
-            // Bundle
-//            val moveIntent = Intent(this@SeventhActivity, EighthActivity::class.java)
-//            val bundlePack = Bundle()
-//            bundlePack.putString("NAMA", binding.namaInput.text.toString())
-//            bundlePack.putString("EMAIL", binding.emailInput.text.toString())
-//            bundlePack.putString("UNIV", binding.univInput.text.toString())
-//            moveIntent.putExtras(bundlePack)
-
-            // Serializable
-//            val moveIntent = Intent(this@SeventhActivity, EighthActivity::class.java)
-//            val mahasiswa = Mahasiswa(binding.namaInput.text.toString(), binding.emailInput.text.toString(), binding.univInput.text.toString())
-//            moveIntent.putExtra("DATA", mahasiswa)
-
-            // Parcelable
             val moveIntent = Intent(this@SeventhActivity, EighthActivity::class.java)
-            val mahasiswa2 = Mahasiswa2(binding.namaInput.text.toString(), binding.emailInput.text.toString(), binding.univInput.text.toString())
-            moveIntent.putExtra("DATA", mahasiswa2)
+            moveIntent.putExtra("NAMA", binding.namaInput.text.toString())
+            moveIntent.putExtra("NAMA_PANGGILAN", binding.namaPanggilanInput.text.toString())
+            moveIntent.putExtra("USIA", binding.usiaInput.text.toString())
+            moveIntent.putExtra("ALAMAT", binding.alamatInput.text.toString())
+            moveIntent.putExtra("EMAIL", binding.emailInput.text.toString())
+            moveIntent.putExtra("UNIV", binding.univInput.text.toString())
+            startActivity(moveIntent)
+        }
 
+        binding.moveActivityBundle.setOnClickListener {
+            // Bundle
+            val moveIntent = Intent(this@SeventhActivity, EighthActivityW::class.java)
+            val bundlePack = Bundle()
+            bundlePack.putString("NAMA", binding.namaInput.text.toString())
+            bundlePack.putString("NAMA_PANGGILAN", binding.namaPanggilanInput.text.toString())
+            bundlePack.putString("USIA", binding.usiaInput.text.toString())
+            bundlePack.putString("ALAMAT", binding.alamatInput.text.toString())
+            bundlePack.putString("EMAIL", binding.emailInput.text.toString())
+            bundlePack.putString("UNIV", binding.univInput.text.toString())
+            moveIntent.putExtras(bundlePack)
+            startActivity(moveIntent)
+        }
+
+        binding.moveActivitySerializable.setOnClickListener {
+            // Serializable
+            val moveIntent = Intent(this@SeventhActivity, EighthActivityX::class.java)
+            val mahasiswa = Mahasiswa(binding.namaInput.text.toString(), binding.namaPanggilanInput.text.toString(), binding.usiaInput.text.toString(), binding.alamatInput.text.toString(), binding.emailInput.text.toString(), binding.univInput.text.toString())
+            moveIntent.putExtra("DATA", mahasiswa)
+            startActivity(moveIntent)
+        }
+
+        binding.moveActivityParcelable.setOnClickListener {
+            // Parcelable
+            val moveIntent = Intent(this@SeventhActivity, EighthActivityY::class.java)
+            val mahasiswa2 = Mahasiswa2(binding.namaInput.text.toString(), binding.namaPanggilanInput.text.toString(), binding.usiaInput.text.toString(), binding.alamatInput.text.toString(), binding.emailInput.text.toString(), binding.univInput.text.toString())
+            moveIntent.putExtra("DATA", mahasiswa2)
             startActivity(moveIntent)
         }
 

@@ -4,10 +4,27 @@ import android.os.Parcel
 import android.os.Parcelable
 import java.io.Serializable
 
-data class Mahasiswa(val nama: String, val email: String, val univ: String) : Serializable
+data class Mahasiswa(
+    val nama: String,
+    val namaPanggilan: String,
+    val usia: String,
+    val alamat: String,
+    val email: String,
+    val univ: String
+) : Serializable
 
-data class Mahasiswa2(val nama: String?, val email: String?, val univ: String?) : Parcelable {
+data class Mahasiswa2(
+    val nama: String?,
+    val namaPanggilan: String?,
+    val usia: String?,
+    val alamat: String?,
+    val email: String?,
+    val univ: String?
+) : Parcelable {
     constructor(parcel: Parcel) : this(
+        parcel.readString(),
+        parcel.readString(),
+        parcel.readString(),
         parcel.readString(),
         parcel.readString(),
         parcel.readString()
@@ -16,6 +33,9 @@ data class Mahasiswa2(val nama: String?, val email: String?, val univ: String?) 
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(nama)
+        parcel.writeString(namaPanggilan)
+        parcel.writeString(usia)
+        parcel.writeString(alamat)
         parcel.writeString(email)
         parcel.writeString(univ)
     }
@@ -33,4 +53,5 @@ data class Mahasiswa2(val nama: String?, val email: String?, val univ: String?) 
             return arrayOfNulls(size)
         }
     }
+
 }

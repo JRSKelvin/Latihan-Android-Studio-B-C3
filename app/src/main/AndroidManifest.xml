@@ -19,6 +19,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BinarAndroidChapter3">
         <activity
+            android:name=".EighthActivityY"
+            android:exported="false" />
+        <activity
+            android:name=".EighthActivityX"
+            android:exported="false" />
+        <activity
+            android:name=".EighthActivityW"
+            android:exported="false" />
+        <activity
             android:name=".EighthActivity"
             android:exported="false" />
         <activity

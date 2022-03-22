@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1">
+        app:layout_constraintVertical_bias="0.010">
 
         <Button
             android:id="@+id/intentPractice"
@@ -39,7 +39,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.1">
 
         <EditText
             android:id="@+id/namaInput"
@@ -47,6 +48,28 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:hint="Input Nama Anda" />
+
+        <EditText
+            android:id="@+id/namaPanggilanInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Input Nama Panggilan Anda" />
+
+        <EditText
+            android:id="@+id/usiaInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Input Usia Anda"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/alamatInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Input Alamat Anda" />
 
         <EditText
             android:id="@+id/emailInput"
@@ -67,6 +90,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Pindah Activity" />
+
+        <Button
+            android:id="@+id/moveActivityBundle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bundle Activity" />
+
+        <Button
+            android:id="@+id/moveActivitySerializable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serializable Activity" />
+
+        <Button
+            android:id="@+id/moveActivityParcelable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parcelable Activity" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
