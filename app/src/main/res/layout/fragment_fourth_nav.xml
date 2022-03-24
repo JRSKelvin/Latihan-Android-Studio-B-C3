@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".navigation.FourthFragmentNav">
+
+    <TextView
+        android:id="@+id/textViewFragmentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Ini Halaman Keempat" />
+
+    <TextView
+        android:id="@+id/textViewFragmentUsiaView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Usia Anda:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/textViewFragmentUsiaEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Silahkan Input Usia Anda"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textViewFragmentAlamatView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Alamat Anda:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/textViewFragmentAlamatEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Silahkan Input Alamat Anda" />
+
+    <TextView
+        android:id="@+id/textViewFragmentPekerjaanView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Pekerjaan Anda:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/textViewFragmentPekerjaanEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Silahkan Input Pekerjaan Anda" />
+
+    <Button
+        android:id="@+id/buttonFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Kembali Halaman Ketiga"
+        android:textSize="16sp" />
+
+</LinearLayout>

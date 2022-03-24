@@ -19,6 +19,11 @@ class SeventhActivity : AppCompatActivity() {
         binding = ActivitySeventhBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.moveActivityNew.setOnClickListener {
+            val intent = Intent(this@SeventhActivity, NinthActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.moveActivity.setOnClickListener {
             // Normal Explicit
             val moveIntent = Intent(this@SeventhActivity, EighthActivity::class.java)

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".navigation.SecondFragmentNav">
+
+    <TextView
+        android:id="@+id/textViewFragmentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Ini Halaman Kedua" />
+
+    <TextView
+        android:id="@+id/textViewFragmentNameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Nama Anda:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/textViewFragmentNameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Silahkan Input Nama Anda" />
+
+    <Button
+        android:id="@+id/buttonFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Menuju Halaman Ketiga"
+        android:textSize="16sp" />
+
+</LinearLayout>

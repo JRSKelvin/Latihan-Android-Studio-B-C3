@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/mainFragmentNav">
+
+    <fragment
+        android:id="@+id/mainFragmentNav"
+        android:name="com.binaracademy.binarandroidchapter3.navigation.MainFragmentNav"
+        android:label="fragment_main_nav"
+        tools:layout="@layout/fragment_main_nav" >
+        <action
+            android:id="@+id/action_mainFragmentNav_to_secondFragmentNav"
+            app:destination="@id/secondFragmentNav" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragmentNav"
+        android:name="com.binaracademy.binarandroidchapter3.navigation.SecondFragmentNav"
+        android:label="fragment_second_nav"
+        tools:layout="@layout/fragment_second_nav" >
+        <action
+            android:id="@+id/action_secondFragmentNav_to_thirdFragmentNav"
+            app:destination="@id/thirdFragmentNav" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragmentNav"
+        android:name="com.binaracademy.binarandroidchapter3.navigation.ThirdFragmentNav"
+        android:label="fragment_third_nav"
+        tools:layout="@layout/fragment_third_nav" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Nama Belum Diinput" />
+        <action
+            android:id="@+id/action_thirdFragmentNav_to_fourthFragmentNav"
+            app:destination="@id/fourthFragmentNav" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourthFragmentNav"
+        android:name="com.binaracademy.binarandroidchapter3.navigation.FourthFragmentNav"
+        android:label="fragment_fourth_nav"
+        tools:layout="@layout/fragment_fourth_nav" >
+        <action
+            android:id="@+id/action_fourthFragmentNav_to_thirdFragmentNav"
+            app:destination="@id/thirdFragmentNav" />
+    </fragment>
+</navigation>

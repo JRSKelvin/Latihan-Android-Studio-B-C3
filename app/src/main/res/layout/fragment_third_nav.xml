@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".navigation.ThirdFragmentNav">
+
+    <TextView
+        android:id="@+id/textViewFragmentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Ini Halaman Ketiga" />
+
+    <TextView
+        android:id="@+id/textViewFragmentNameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Nama Anda"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewFragmentUsiaView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Usia Anda"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewFragmentAlamatView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Alamat Anda"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewFragmentPekerjaanView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Pekerjaan Anda"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Menuju Halaman Keempat"
+        android:textSize="16sp" />
+
+</LinearLayout>
