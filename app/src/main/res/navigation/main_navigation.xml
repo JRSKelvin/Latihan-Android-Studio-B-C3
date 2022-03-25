@@ -33,6 +33,13 @@
             app:argType="string"
             app:nullable="true"
             android:defaultValue="Nama Belum Diinput" />
+        <argument
+            android:name="namaperusahaan"
+            android:defaultValue="Nama Perusahaan Belum Diinput"
+            app:argType="string" />
+        <deepLink
+            android:id="@+id/deepLink2"
+            app:uri="https://www.examplebinaracademy.com/linkdeep/{name}/{namaperusahaan}" />
         <action
             android:id="@+id/action_thirdFragmentNav_to_fourthFragmentNav"
             app:destination="@id/fourthFragmentNav" />

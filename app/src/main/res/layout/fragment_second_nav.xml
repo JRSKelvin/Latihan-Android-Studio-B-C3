@@ -28,6 +28,21 @@
         android:layout_margin="16dp"
         android:hint="Silahkan Input Nama Anda" />
 
+    <TextView
+        android:id="@+id/textViewFragmentNamePrView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Nama Perusahaan Anda:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/textViewFragmentNamePrEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Silahkan Input Nama Perusahaan Anda" />
+
     <Button
         android:id="@+id/buttonFragment"
         android:layout_width="match_parent"

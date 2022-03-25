@@ -27,11 +27,12 @@ class SecondFragmentNav : Fragment() {
         binding.textViewFragmentNameView.text = "Nama Kamu : $aName"
 
         binding.buttonFragment.setOnClickListener {
-            if (binding.textViewFragmentNameEdit.text.isNullOrEmpty()) {
+            if (binding.textViewFragmentNameEdit.text.isNullOrEmpty() or binding.textViewFragmentNamePrEdit.text.isNullOrEmpty()) {
                 Toast.makeText(requireContext(), "Mohon Diisi Nama Pada Input", Toast.LENGTH_LONG).show()
             } else {
                 val actionToThirdFragment = SecondFragmentNavDirections.actionSecondFragmentNavToThirdFragmentNav()
                 actionToThirdFragment.name = binding.textViewFragmentNameEdit.text.toString()
+                actionToThirdFragment.namaperusahaan = binding.textViewFragmentNamePrEdit.text.toString()
                 it.findNavController().navigate(actionToThirdFragment)
             }
         }

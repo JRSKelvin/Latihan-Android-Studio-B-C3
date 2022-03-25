@@ -24,11 +24,13 @@ class ThirdFragmentNav : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val aName = ThirdFragmentNavArgs.fromBundle(arguments as Bundle).name
+        val aPerusahaan = ThirdFragmentNavArgs.fromBundle(arguments as Bundle).namaperusahaan
         val aUsia = arguments?.getString("USIA")
         val aAlamat = arguments?.getString("ALAMAT")
         val aPekerjaan = arguments?.getString("PEKERJAAN")
         val aNewName = arguments?.getString("NAME")
         binding.textViewFragmentNameView.text = "Nama Kamu : $aName"
+        binding.textViewFragmentNamePrView.text = "Nama Perusahaan : $aPerusahaan"
         if (!aUsia.isNullOrEmpty() or !aAlamat.isNullOrEmpty() or !aPekerjaan.isNullOrEmpty() or !aNewName.isNullOrEmpty()) {
             var deviderByInt : String = ""
             if (aUsia!!.toInt() %2 == 0) {
