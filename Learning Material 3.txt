@@ -1,0 +1,5 @@
+- Android Permissions
+- Activity Dan Activity Lifecycle
+- Fragment Dan Fragment Lifecycle
+- Intent, Bundle, Serializable, Dan Parcelable
+- Navigation Component
